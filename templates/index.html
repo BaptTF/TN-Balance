@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Event and Object</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Create Event and Object</h1>
+        
+        <div class="mt-5">
+            <h2>Create New Event</h2>
+            <form action="/create_event" method="post">
+                <div class="form-group">
+                    <label for="eventName">Event Name</label>
+                    <input type="text" class="form-control" id="eventName" name="eventName" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Event</button>
+            </form>
+        </div>
+
+        <div class="mt-5">
+            <h2>Create New Object</h2>
+            <form action="/create_object" method="post">
+                <div class="form-group">
+                    <label for="eventId">Event ID</label>
+                    <input type="number" class="form-control" id="eventId" name="eventId" required>
+                </div>
+                <div class="form-group">
+                    <label for="objectName">Object Name</label>
+                    <input type="text" class="form-control" id="objectName" name="objectName" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Create Object</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
